@@ -1,0 +1,15 @@
+char1_alive = int(input(" "))
+char2_alive = int(input(" "))
+char1 = input("")
+char2 = input("")
+if char1_alive == 1:
+    print(char1, "killed", char2)
+    char2_alive -= 1
+    print(char2_alive)
+else:
+    print("")
+if char2_alive == 1:
+    print(char2, "killed", char1)
+    char1_alive -= 1
+    print(char2_alive)
+else:
