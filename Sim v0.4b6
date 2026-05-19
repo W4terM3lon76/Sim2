@@ -1,0 +1,302 @@
+import random
+import time
+gender = 0 # have pronouns or something 
+place = 0 #when body found say random place or something like that 
+killcount = 0 #each character have it's own kill count displayed at the end
+char1 = input("name: ")
+char2 = input("name: ")
+char3 = input("name: ")
+char4 = input("name: ")
+char5 = input("name: ")
+char6 = input("name: ")
+loop = int(input("loop: "))
+char1hp = 1
+char2hp = 1
+char3hp = 1
+char4hp = 1
+char5hp = 1
+char6hp = 1
+while loop >= 1:
+ acc1 = random.randint(1,2)
+ charp = random.randint(1,6)
+ chare = random.randint(1,6)
+ print(acc1)
+ if acc1 == 1:
+    if charp == 1:
+      if char1hp == 1:   
+         if chare == 1:
+             print(char1, "killed himself")
+             char1hp = 0
+         elif chare == 2:
+          if char2hp == 1:
+            print(char1, "killed",char2)
+            char2hp = 0
+          elif char2hp <= 1:
+              print(char1,"found",char2,"'s body in a ditch")
+         elif chare == 3:
+          if char3hp == 1:
+            print(char1, "killed",char3)
+            char3hp = 0
+          elif char3hp <= 1:
+              print(char1,"found",char3,"'s body in a ditch")
+         elif chare == 4:
+          if char4hp == 1:
+            print(char1, "killed",char4)
+            char4hp = 0
+          elif char4hp <= 1:
+              print(char1,"found",char4,"'s body in a ditch")
+         elif chare == 5:
+          if char5hp == 1:
+            print(char1, "killed",char5)
+            char5hp = 0
+          elif char5hp <= 1:
+              print(char1,"found",char5,"'s body in a ditch")
+         elif chare == 6:
+          if char6hp == 1:
+            print(char1, "killed",char6)
+            char6hp = 0
+          elif char6hp <= 1:
+              print(char1,"found",char6,"'s body in a ditch")
+         else:
+            print("error")
+      else:
+          print(char1,"is dead")
+    elif charp == 2:
+        if char2hp == 1:
+         if chare == 1:
+          if char1hp == 1:
+            print(char2, "killed",char1)
+            char1hp = 0
+          elif char1hp <= 1:
+              print(char2,"found",char1,"'s body in a ditch")
+         elif chare == 2:
+            print(char2, "killed himself")
+            char2hp = 0
+         elif chare == 3:
+          if char3hp == 1:
+            print(char2, "killed",char3)
+            char3hp = 0
+          elif char3hp <= 1:
+              print(char2,"found",char3,"'s body in a ditch")
+         elif chare == 4:
+          if char4hp == 1:
+            print(char2, "killed",char4)
+            char4hp = 0
+          elif char4hp <= 1:
+              print(char2,"found",char4,"'s body in a ditch")
+         elif chare == 5:
+          if char5hp == 1:
+            print(char2, "killed",char5)
+            char5hp = 0
+          elif char5hp <= 1:
+              print(char2,"found",char5,"'s body in a ditch")
+         elif chare == 6:
+          if char6hp == 1:
+            print(char2, "killed",char6)
+            char6hp = 0
+          elif char6hp <= 1:
+              print(char2,"found",char6,"'s body in a ditch")
+         else:
+            print("error")
+        elif char2hp <= 1:
+              print(char2,"is dead")
+    elif charp == 3:
+        if char3hp == 1:
+         if chare == 1:
+          if char1hp == 1:
+            print(char3, "killed",char1)
+            char1hp = 0
+          elif char1hp <= 1:
+              print(char3,"found",char1,"'s body in a ditch")
+         elif chare == 2:
+          if char2hp == 1:
+            print(char3, "killed",char2)
+            char2hp = 0
+          elif char2hp <= 1:
+              print(char3,"found",char2,"'s body in a ditch")
+         elif chare == 3:
+            print(char3, "killed himself")
+         elif chare == 4:
+          if char4hp == 1:
+            print(char3, "killed",char4)
+            char4hp = 0
+          elif char4hp <= 1:
+              print(char3,"found",char4,"'s body in a ditch")
+         elif chare == 5:
+          if char5hp == 1:
+            print(char3, "killed",char5)
+            char5hp = 0
+          elif char5hp <= 1:
+              print(char3,"found",char5,"'s body in a ditch")
+         elif chare == 6:
+          if char6hp == 1:
+            print(char3, "killed",char6)
+            char6hp = 0
+          elif char6hp <= 1:
+              print(char3,"found",char6,"'s body in a ditch")
+         else:
+             print("error")
+        elif char3hp <= 1:
+              print(char3,"is dead")
+    elif charp == 4:
+        if char4hp == 1:
+         if chare == 1:
+            print(char4, "killed",char1)
+            char1hp = 0
+         elif chare == 2:
+            print(char4, "killed",char2)
+         elif chare == 3:
+            print(char4, "killed",char3)
+         elif chare == 4:
+            print(char4, "killed himself")
+         elif chare == 5:
+            print(char4, "killed",char5)
+         elif chare == 6:
+            print(char4, "killed",char6)
+         else:
+            print("error")
+        elif char4hp <= 1:
+            print(char4,"is dead")
+    elif charp == 5:
+        if char5hp == 1:
+         if chare == 1:
+            print(char5, "killed",char1)
+            char1hp = 0
+         elif chare == 2:
+            print(char5, "killed",char2)
+         elif chare == 3:
+            print(char5, "killed",char3)
+         elif chare == 4:
+            print(char5, "killed",char4)
+         elif chare == 5:
+            print(char5, "killed himself")
+         elif chare == 6:
+            print(char5, "killed",char6)
+         else:
+            print("error")
+        elif char5hp <= 1:
+            print(char5,"is dead")
+    elif charp == 6:
+        if char6hp == 1:
+         if chare == 1:
+            print(char6, "killed",char1)
+            char1hp = 0
+         elif chare == 2:
+            print(char6, "killed",char2)
+         elif chare == 3:
+            print(char6, "killed",char3)
+         elif chare == 4:
+            print(char6, "killed",char4)
+         elif chare == 5:
+            print(char6, "killed",char5)
+         elif chare == 6:
+            print(char6, "killed himself")
+         else:
+            print("error")
+        elif char6hp <= 1:
+            print(char6,"is dead")
+        loop = loop - 1
+ if acc1 == 2:
+    if charp == 1:
+        if char1hp == 1:
+         if chare == 1:
+            print(char1, "healed himself")
+         elif chare == 2:
+            print(char1, "healed",char2)
+         elif chare == 3:
+            print(char1, "healed",char3)
+         elif chare == 4:
+            print(char1, "healed",char4)
+         elif chare == 5:
+            print(char1, "healed",char5)
+         elif chare == 6:
+            print(char1, "healed",char6)
+         else:
+            print("error")
+        if char1hp <= 1:
+            print(char1,"isn't breathing")
+    elif charp == 2:
+        if chare == 1:
+         if char1hp == 1:
+            print(char2, "killed",char1)
+         elif char1hp <= 1:
+              print(char2,"tried reviving",char1,"but he had no success")
+        elif chare == 2:
+         if char2hp == 1:
+            print(char2, "healed himself")
+         elif char2hp <= 1:
+            print(char2,"found dead in a ditch")
+        elif chare == 3:
+         if char3hp == 1:
+            print(char2, "healed",char3)
+         elif char3hp <= 1:
+            print(char2,"tried reviving",char3,"but he had no success")
+        elif chare == 4:
+            print(char2, "healed",char4)
+        elif chare == 5:
+            print(char2, "healed",char5)
+        elif chare == 6:
+            print(char2, "healed",char6)
+        else:
+            print("error")
+    elif charp == 3:
+        if chare == 1:
+            print(char3, "healed",char1)
+        elif chare == 2:
+            print(char3, "healed",char2)
+        elif chare == 3:
+            print(char3, "healed himself")
+        elif chare == 4:
+            print(char3, "healed",char4)
+        elif chare == 5:
+            print(char3, "healed",char5)
+        elif chare == 6:
+            print(char3, "healed",char6)
+        else:
+            print("error")
+    elif charp == 4:
+        if chare == 1:
+            print(char4, "healed",char1)
+        elif chare == 2:
+            print(char4, "healed",char2)
+        elif chare == 3:
+            print(char4, "healed",char3)
+        elif chare == 4:
+            print(char4, "healed himself")
+        elif chare == 5:
+            print(char4, "healed",char5)
+        elif chare == 6:
+            print(char4, "healed",char6)
+        else:
+            print("error")
+    elif charp == 5:
+        if chare == 1:
+            print(char5, "healed",char1)
+        elif chare == 2:
+            print(char5, "healed",char2)
+        elif chare == 3:
+            print(char5, "healed",char3)
+        elif chare == 4:
+            print(char5, "healed",char4)
+        elif chare == 5:
+            print(char5, "healed himself")
+        elif chare == 6:
+            print(char5, "healed",char6)
+        else:
+            print("error")
+    elif charp == 6:
+        if chare == 1:
+            print(char6, "healed",char1)
+        elif chare == 2:
+            print(char6, "healed",char2)
+        elif chare == 3:
+            print(char6, "healed",char3)
+        elif chare == 4:
+            print(char6, "healed",char4)
+        elif chare == 5:
+            print(char6, "healed",char5)
+        elif chare == 6:
+            print(char6, "healed himself")
+        else:
+            print("error")
+        loop = loop - 1
